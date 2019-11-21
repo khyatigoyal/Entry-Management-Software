@@ -1,0 +1,6 @@
+export const CREATE_HOST = 'CREATE_HOST';
+export const FETCH_HOSTS = 'FETCH_HOSTS';
+export const FETCH_HOST = 'FETCH_HOST';
+export const DELETE_VISITOR = 'DELETE_VISITOR';
+export const VISIT_HOST = 'VISIT_HOST';
+export const FETCH_VISITOR = 'FETCH_VISITOR';

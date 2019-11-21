@@ -1,0 +1,75 @@
+{
+  "hosts": [
+    {
+      "name": "Khyati Goyal",
+      "address": "xyz",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 1
+    },
+    {
+      "name": "Parakh Goyal",
+      "address": "xyz",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 2
+    },
+    {
+      "name": "Alka Goyal",
+      "address": "xyz",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 3
+    },
+    {
+      "name": "khushi Goyal",
+      "emailid": "khushigoyal@gmail.com",
+      "address": "khatipura road",
+      "contact": "1234567890",
+      "id": 6
+    },
+    {
+      "name": "Ojasvi Sharma",
+      "address": "abc",
+      "emailid": "ojasvi@gmail.com",
+      "contact": "4567890123",
+      "id": 7
+    }
+  ],
+  "visitors": [
+    {
+      "name": "Hitesha Goyal",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 1
+    },
+    {
+      "name": "Taru Goyal",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 2
+    },
+    {
+      "name": "Hiya Goyal",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 3
+    },
+    {
+      "name": "kanishka Goyal",
+      "emailid": "khyati.goyal32@gmail.com",
+      "contact": "9462904912",
+      "id": 4
+    },
+    {
+      "name": "Paridhi Vijay",
+      "emailid": "kiii",
+      "contact": "naa",
+      "id": 5
+    },
+    {
+      "0": "3",
+      "id": 6
+    }
+  ]
+}
