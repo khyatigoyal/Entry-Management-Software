@@ -32,7 +32,6 @@ export const fetchHost = id => async dispatch => {
 
 export const visitHost = formValues => async dispatch => {
   const response = await visitors.post('/visitors', { ...formValues });
-
   dispatch({ type: VISIT_HOST, payload: response.data });
   history.push('/');
 };

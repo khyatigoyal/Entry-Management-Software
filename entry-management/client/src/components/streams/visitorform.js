@@ -61,7 +61,7 @@ class VisitorForm extends React.Component {
           label='enter contactNo.'
         />
         <Field
-          name='Date and In-time'
+          name='InTime'
           component={this.renderInput}
           label='enter In-time'
         />
@@ -76,10 +76,6 @@ const validate = formValues => {
   if (!formValues.name) {
     errors.name = 'name needs to be filled.';
   }
-
-  if (!formValues.address) {
-    errors.address = 'Enter an address.';
-  }
   if (!formValues.emailid) {
     errors.emailid = 'Enter an emailid.';
   }
@@ -87,10 +83,13 @@ const validate = formValues => {
     errors.contact = 'Enter a contactNo.';
   }
 
+  if (!formValues.InTime) {
+    errors.contact = 'Enter the In-Time';
+  }
   return errors;
 };
 
 export default reduxForm({
-  form: 'hostForm',
+  form: 'visitorForm',
   validate
 })(VisitorForm);

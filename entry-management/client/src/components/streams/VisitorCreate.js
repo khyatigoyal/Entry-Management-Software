@@ -6,14 +6,10 @@ import VisitorForm from './visitorform';
 class VisitorCreate extends React.Component {
   onSubmit = formValues => {
     console.log(formValues);
-    this.props.visitHost(this.props.match.params.id, formValues);
+    this.props.visitHost(formValues);
   };
 
   render() {
-    if (!this.props.visitor) {
-      return <div>Loading...</div>;
-    }
-
     return (
       <div>
         <h3>Visitor Details</h3>
@@ -23,10 +19,4 @@ class VisitorCreate extends React.Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    visitor: state.visitors[ownProps.match.params.id]
-  };
-};
-
-export default connect(mapStateToProps, { visitHost })(VisitorCreate);
+export default connect(null, { visitHost })(VisitorCreate);
