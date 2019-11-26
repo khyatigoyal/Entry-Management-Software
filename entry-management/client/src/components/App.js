@@ -5,6 +5,7 @@ import VisitorCreate from './streams/VisitorCreate';
 import VisitorDelete from './streams/VisitorDelete';
 import HostsList from './streams/HostsList';
 import HostDetails from './streams/HostDetails';
+import CheckedIn from './streams/CheckedIn';
 import Header from './Header';
 import history from '../history';
 
@@ -22,7 +23,8 @@ const App = () => {
               exact
               component={VisitorCreate}
             />
-            <Route path='/hosts/:id/checkout' component={VisitorDelete} />
+            <Route path='/hosts/:id/in' component={CheckedIn} />
+            <Route path='/hosts/:id/in/checkout' component={VisitorDelete} />
             <Route path='/hosts/:id' component={HostDetails} />
           </Switch>
         </div>

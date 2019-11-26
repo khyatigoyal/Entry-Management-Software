@@ -1,7 +1,13 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-
+import { Link } from 'react-router-dom';
 class VisitorForm extends React.Component {
+  currtime() {
+    const tempTime = new Date();
+    const time = tempTime.getHours() + ':' + tempTime.getMinutes();
+    const currTime = time;
+    return currTime;
+  }
   renderError({ error, touched }) {
     if (touched && error) {
       return (
@@ -22,27 +28,22 @@ class VisitorForm extends React.Component {
       </div>
     );
   };
-
+  renderInput1 = ({ input, label, meta }) => {
+    const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <input {...input} autoComplete='off' placeholder={this.currtime()} />
+        {this.renderError(meta)}
+      </div>
+    );
+  };
   onSubmit = formValues => {
     this.props.onSubmit(formValues);
   };
 
   render() {
-    /*const tempDate = new Date();
-    const date =
-      tempDate.getFullYear() +
-      '-' +
-      (tempDate.getMonth() + 1) +
-      '-' +
-      tempDate.getDate() +
-      ' ' +
-      tempDate.getHours() +
-      ':' +
-      tempDate.getMinutes() +
-      ':' +
-      tempDate.getSeconds();
-    const currDate = 'Current Date= ' + date;*/
-    // console.log(this.props)
+    console.log(this.props);
     return (
       <form
         onSubmit={this.props.handleSubmit(this.onSubmit)}
@@ -62,7 +63,7 @@ class VisitorForm extends React.Component {
         />
         <Field
           name='InTime'
-          component={this.renderInput}
+          component={this.renderInput1}
           label='enter In-time'
         />
         <button className='ui button primary'>Submit</button>
@@ -82,9 +83,8 @@ const validate = formValues => {
   if (!formValues.contact) {
     errors.contact = 'Enter a contactNo.';
   }
-
   if (!formValues.InTime) {
-    errors.contact = 'Enter the In-Time';
+    errors.InTime = 'Input the given time';
   }
   return errors;
 };

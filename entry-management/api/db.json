@@ -36,43 +36,5 @@
       "id": 7
     }
   ],
-  "visitors": [
-    {
-      "name": "Hitesha Goyal",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
-      "id": 1
-    },
-    {
-      "name": "Taru Goyal",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
-      "id": 2
-    },
-    {
-      "name": "Hiya Goyal",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
-      "id": 3
-    },
-    {
-      "name": "kanishka Goyal",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
-      "id": 4
-    },
-    {
-      "name": "Paridhi Vijay",
-      "emailid": "kiii",
-      "contact": "naa",
-      "id": 5
-    },
-    {
-      "name": "Vidhi Saini",
-      "emailid": "vidhi@gmail.com",
-      "contact": "1234567890",
-      "InTime": "2:45",
-      "id": 7
-    }
-  ]
+  "visitors": []
 }

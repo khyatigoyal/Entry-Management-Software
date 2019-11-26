@@ -14,9 +14,6 @@ class HostsList extends React.Component {
         <Link to={`/hosts/${host.id}/newvisitor`} className='ui button primary'>
           Visit
         </Link>
-        <Link to={`/hosts/${host.id}/checkout`} className='ui button negative'>
-          Checkout
-        </Link>
       </div>
     );
   }

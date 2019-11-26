@@ -7,7 +7,7 @@ import history from '../../history';
 
 class VisitorDelete extends React.Component {
   componentDidMount() {
-    this.props.fetchVisitor(this.props.match.params.id);
+    this.props.fetchVisitor(this.props.params.id);
   }
 
   renderActions() {
@@ -56,10 +56,11 @@ class VisitorDelete extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    visitor: state.visitors[ownProps.match.params.id]
+    visitor: state.hosts[ownProps.match.params.id]
   };
 };
 
-export default connect(mapStateToProps, { fetchVisitor, deleteVisitor })(
-  VisitorDelete
-);
+export default connect(mapStateToProps, {
+  fetchVisitor,
+  deleteVisitor
+})(VisitorDelete);
