@@ -50,7 +50,7 @@ The above code in index.js sends the information of host to json-server in db.js
 All the components are routed through different route parameters.
 As soon as the host registers the host is displayed in the list.Further We can access their general information(Address,Contact,Email) by clicking on individual host.
 On the right of each host we have the option of visiting that particular host or not.
-![alt tag](https://github.com/khyatigoyal/Entry-Management-Software/blob/master/entry-management/Documentation/VisitorForm.PNG)
+![alt tag](https://github.com/khyatigoyal/Entry-Management-Software/blob/master/entry-management/Documentation/Visitor.PNG)
 
 ```
 The usage of Redux Library is abundant,Redux forms to compile the visitor and hosts forms into database,Reducers, action creators to Post,Delete,Get,Patch,Put requests on Json-Server that is simultaneously running on port3001.
