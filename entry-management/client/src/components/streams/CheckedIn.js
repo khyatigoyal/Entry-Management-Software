@@ -22,7 +22,7 @@ class CheckedIn extends React.Component {
         </p>
         <div className='right floated content'>
           <Link
-            to={`/hosts/${id}/newvisitor/in/checkout`}
+            to={`/hosts/${id}/newvisitor/checkout`}
             className='ui button negative'
           >
             Checkout!

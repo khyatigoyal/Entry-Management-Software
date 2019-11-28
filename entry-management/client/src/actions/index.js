@@ -33,17 +33,17 @@ export const fetchHost = id => async dispatch => {
 export const visitHost = (id, formValues) => async dispatch => {
   const response = await visitors.post('/visitors', { ...formValues });
   dispatch({ type: VISIT_HOST, payload: response.data });
-  history.push(`/hosts/${id}/newvisitor/in`);
+  history.push(`/hosts/${id}/newvisitor/dashboard`);
 };
 
 export const deleteVisitor = id => async dispatch => {
-  await visitors.delete(`/visitors/${id}`);
+  await visitors.delete(`/hosts/${id}`);
   dispatch({ type: DELETE_VISITOR, payload: id });
   history.push('/');
 };
 
 export const fetchVisitor = id => async dispatch => {
-  const response = await visitors.get(`/visitors/${id}`);
+  const response = await visitors.get(`/hosts/${id}`);
 
   dispatch({ type: FETCH_VISITOR, payload: response.data });
 };

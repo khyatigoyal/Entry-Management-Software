@@ -6,10 +6,6 @@ import { fetchVisitor, deleteVisitor } from '../../actions';
 import history from '../../history';
 
 class VisitorDelete extends React.Component {
-  componentDidMount() {
-    this.props.fetchVisitor(this.props.params.id);
-  }
-
   renderActions() {
     const { id } = this.props.match.params;
     return (
@@ -18,7 +14,7 @@ class VisitorDelete extends React.Component {
           onClick={() => this.props.deleteVisitor(id)}
           className='ui primary button negative'
         >
-          Delete
+          Checkout
         </button>
         <Link to={'/'} className='ui button'>
           Cancel
