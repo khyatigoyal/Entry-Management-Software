@@ -2,39 +2,40 @@
   "hosts": [
     {
       "name": "Khyati Goyal",
-      "address": "xyz",
+      "address": "shakyapuri,Ajmer",
       "emailid": "khyati.goyal32@gmail.com",
       "contact": "9462904912",
       "id": 1
     },
     {
-      "name": "Parakh Goyal",
-      "address": "xyz",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
+      "name": "Alka Goyal",
+      "address": "kankerkheda,Meerut",
+      "emailid": "alka@gmail.com",
+      "contact": "1234567890",
       "id": 2
     },
     {
-      "name": "Alka Goyal",
-      "address": "xyz",
-      "emailid": "khyati.goyal32@gmail.com",
-      "contact": "9462904912",
+      "name": "Ranjan Goyal",
+      "address": "vaishali Nagar, Jaipur",
+      "emailid": "goyal.ranjan@gmail.com",
+      "contact": "2345671890",
       "id": 3
     },
     {
-      "name": "khushi Goyal",
-      "emailid": "khushigoyal@gmail.com",
-      "address": "khatipura road",
-      "contact": "1234567890",
-      "id": 6
-    },
-    {
-      "name": "Ojasvi Sharma",
-      "address": "abc",
-      "emailid": "ojasvi@gmail.com",
-      "contact": "4567890123",
-      "id": 7
+      "name": "Parakh Goyal",
+      "address": "Bangluru",
+      "emailid": "Parakh@gmail.com",
+      "contact": "2345167890",
+      "id": 4
     }
   ],
-  "visitors": []
+  "visitors": [
+    {
+      "name": "Khushi Goyal",
+      "emailid": "khushi@gmail.com",
+      "contact": "9460064536",
+      "InTime": "10:43",
+      "id": 1
+    }
+  ]
 }

@@ -14,7 +14,7 @@ class Header extends React.Component {
     return (
       <header className='ui secondary pointing menu'>
         <Link to='/' className='item'>
-          Hosts
+          Entry Management
         </Link>
         <div className='right menu'>
           <Link to='/' className='item'>

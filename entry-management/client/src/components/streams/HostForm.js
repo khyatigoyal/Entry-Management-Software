@@ -12,12 +12,12 @@ class HostForm extends React.Component {
     }
   }
 
-  renderInput = ({ input, label, meta }) => {
+  renderInput = ({ input, type, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
     return (
       <div className={className}>
         <label>{label}</label>
-        <input {...input} autoComplete='off' />
+        <input {...input} type={type} autoComplete='off' />
         {this.renderError(meta)}
       </div>
     );
@@ -34,21 +34,29 @@ class HostForm extends React.Component {
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className='ui form error'
       >
-        <Field name='name' component={this.renderInput} label='Enter Name' />
+        <Field
+          name='name'
+          type='text'
+          component={this.renderInput}
+          label='Enter Name'
+        />
         <Field
           name='address'
+          type='text'
           component={this.renderInput}
-          label='enter address'
+          label='Enter Address'
         />
         <Field
           name='emailid'
+          type='email'
           component={this.renderInput}
-          label='enter emailid'
+          label='Enter Email-id'
         />
         <Field
           name='contact'
+          type='number'
           component={this.renderInput}
-          label='enter contactNo.'
+          label='Enter ContactNo.'
         />
         <button className='ui button primary'>Submit</button>
       </form>

@@ -23,8 +23,11 @@ const App = () => {
               exact
               component={VisitorCreate}
             />
-            <Route path='/hosts/:id/in' component={CheckedIn} />
-            <Route path='/hosts/:id/in/checkout' component={VisitorDelete} />
+            <Route path='/hosts/:id/newvisitor/in' component={CheckedIn} />
+            <Route
+              path='/hosts/:id/newvisitor/in/checkout'
+              component={VisitorDelete}
+            />
             <Route path='/hosts/:id' component={HostDetails} />
           </Switch>
         </div>

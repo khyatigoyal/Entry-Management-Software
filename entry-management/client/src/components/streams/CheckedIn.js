@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchHost, fetchVisitor } from '../../actions';
+import { fetchHost } from '../../actions/index';
 import { Link } from 'react-router-dom';
 class CheckedIn extends React.Component {
   render() {
     if (!this.props.host) {
-      return <div>loading...</div>;
+      return <div>Loading...</div>;
     }
     const { name, id } = this.props.host;
     console.log(this.props);
@@ -39,4 +39,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps, { fetchHost, fetchVisitor })(CheckedIn);
+export default connect(mapStateToProps, { fetchHost })(CheckedIn);

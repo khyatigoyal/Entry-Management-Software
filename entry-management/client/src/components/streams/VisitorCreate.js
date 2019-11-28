@@ -9,7 +9,7 @@ class VisitorCreate extends React.Component {
   };
   onSubmit = formValues => {
     console.log(formValues);
-    this.props.visitHost(formValues);
+    this.props.visitHost(this.props.host.id, formValues);
     const templateId = 'template_4GwoYG7J';
 
     this.sendFeedback(templateId, {
@@ -37,7 +37,7 @@ class VisitorCreate extends React.Component {
     return (
       <div>
         <h3>Visitor Details</h3>
-        <VisitorForm onSubmit={this.onSubmit} userid={this.props.host.id} />
+        <VisitorForm onSubmit={this.onSubmit} userid={this.props.host} />
       </div>
     );
   }

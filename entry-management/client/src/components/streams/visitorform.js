@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import { Link } from 'react-router-dom';
+
 class VisitorForm extends React.Component {
   currtime() {
     const tempTime = new Date();
@@ -18,12 +18,12 @@ class VisitorForm extends React.Component {
     }
   }
 
-  renderInput = ({ input, label, meta }) => {
+  renderInput = ({ input, label, meta, type }) => {
     const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
     return (
       <div className={className}>
         <label>{label}</label>
-        <input {...input} autoComplete='off' />
+        <input {...input} type={type} />
         {this.renderError(meta)}
       </div>
     );
@@ -41,23 +41,29 @@ class VisitorForm extends React.Component {
   onSubmit = formValues => {
     this.props.onSubmit(formValues);
   };
-
   render() {
     console.log(this.props);
     return (
       <form
-        onSubmit={this.props.handleSubmit(this.onSubmit)}
         className='ui form error'
+        onSubmit={this.props.handleSubmit(this.onSubmit)}
       >
-        <Field name='name' component={this.renderInput} label='Enter Name' />
+        <Field
+          name='name'
+          component={this.renderInput}
+          type='text'
+          label='Enter Name'
+        />
 
         <Field
           name='emailid'
+          type='email'
           component={this.renderInput}
           label='enter emailid'
         />
         <Field
           name='contact'
+          type='number'
           component={this.renderInput}
           label='enter contactNo.'
         />

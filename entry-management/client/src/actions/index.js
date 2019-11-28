@@ -30,10 +30,10 @@ export const fetchHost = id => async dispatch => {
   dispatch({ type: FETCH_HOST, payload: response.data });
 };
 
-export const visitHost = formValues => async dispatch => {
+export const visitHost = (id, formValues) => async dispatch => {
   const response = await visitors.post('/visitors', { ...formValues });
   dispatch({ type: VISIT_HOST, payload: response.data });
-  history.push('/');
+  history.push(`/hosts/${id}/newvisitor/in`);
 };
 
 export const deleteVisitor = id => async dispatch => {

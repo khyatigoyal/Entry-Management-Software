@@ -36,7 +36,6 @@ class HostsList extends React.Component {
   }
 
   render() {
-    // console.log(this.props.streams)
     return (
       <div>
         <h2>Hosts</h2>
