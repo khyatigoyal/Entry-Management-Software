@@ -11,7 +11,7 @@ ReactJs,Fake Rest Api,Redux,ScnematicUI,EmailJS,Json-Server
 
 ![alt tag](https://raw.githubusercontent.com/riyalohia/Innovaccer-Medicare/master/Documentation/form.PNG "Search Symptoms")
 
-After clicking on Register as Host, a Post request is sent from *client/src/actions/index.js* to *api/db.json*.
+After clicking on Register as Host, and filling the Host Details form a Post request is sent from *client/src/actions/index.js* to *api/db.json*.
 
 ### index.js
 

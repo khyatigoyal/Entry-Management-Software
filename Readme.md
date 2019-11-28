@@ -27,4 +27,4 @@ npm start
 ```
 
 The app will automatically start on https://localhost:3000 and json-server running on https://localhost:3001
-You can find the complete documentation link [here]()
+You can find the complete documentation link [here](https://github.com/khyatigoyal/Entry-Management-Software/blob/master/entry-management/Documentation/Readme.md)
