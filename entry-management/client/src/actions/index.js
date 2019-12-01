@@ -5,7 +5,6 @@ import {
   CREATE_HOST,
   FETCH_HOSTS,
   FETCH_HOST,
-  DELETE_VISITOR,
   VISIT_HOST,
   FETCH_VISITOR
 } from './types';
@@ -36,14 +35,8 @@ export const visitHost = (id, formValues) => async dispatch => {
   history.push(`/hosts/${id}/newvisitor/dashboard`);
 };
 
-export const deleteVisitor = id => async dispatch => {
-  await visitors.delete(`/hosts/${id}`);
-  dispatch({ type: DELETE_VISITOR, payload: id });
-  history.push('/');
-};
-
 export const fetchVisitor = id => async dispatch => {
-  const response = await visitors.get(`/hosts/${id}`);
+  const response = await visitors.get(`/visitors/${id}`);
 
   dispatch({ type: FETCH_VISITOR, payload: response.data });
 };

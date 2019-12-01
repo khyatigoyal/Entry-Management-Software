@@ -33,7 +33,12 @@ class VisitorForm extends React.Component {
     return (
       <div className={className}>
         <label>{label}</label>
-        <input {...input} autoComplete='off' placeholder={this.currtime()} />
+        <input
+          {...input}
+          autoComplete='off'
+          placeholder={this.currtime()}
+          disabled
+        />
         {this.renderError(meta)}
       </div>
     );
@@ -88,9 +93,6 @@ const validate = formValues => {
   }
   if (!formValues.contact) {
     errors.contact = 'Enter a contactNo.';
-  }
-  if (!formValues.InTime) {
-    errors.InTime = 'Input the given time';
   }
   return errors;
 };

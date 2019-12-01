@@ -11,11 +11,23 @@ class HostDetails extends React.Component {
     console.log(this.props);
 
     return (
-      <div>
-        <h2>{name}</h2>
-        <h3>{address}</h3>
-        <p>{emailid}</p>
-        <h5>{contact}</h5>
+      <div className='ui centered raised red card'>
+        <div className='ui image'>
+          <img
+            alt='...'
+            src='https://icon-library.net/images/criteria-icon/criteria-icon-18.jpg'
+            className='mini ui image'
+          />
+        </div>
+        <div className='content'>
+          <h2>{name}</h2>
+
+          <div className='description'>
+            <h3>{address}</h3>
+            <p>{emailid}</p>
+            <h5>{contact}</h5>
+          </div>
+        </div>
       </div>
     );
   }

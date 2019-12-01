@@ -11,7 +11,6 @@ class HostCreate extends React.Component {
   render() {
     return (
       <div>
-        <h3>Host Details</h3>
         <HostForm onSubmit={this.onSubmit} />
       </div>
     );

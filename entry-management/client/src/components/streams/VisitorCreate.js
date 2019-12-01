@@ -4,6 +4,12 @@ import { visitHost, fetchHost } from '../../actions/index';
 import VisitorForm from './visitorform';
 
 class VisitorCreate extends React.Component {
+  currtime() {
+    const tempTime = new Date();
+    const time = tempTime.getHours() + ':' + tempTime.getMinutes();
+    const currTime = time;
+    return currTime;
+  }
   emailid = () => {
     return this.props.host.emailid;
   };
@@ -16,7 +22,7 @@ class VisitorCreate extends React.Component {
       name: formValues.name,
       emailid: formValues.emailid,
       contact: formValues.contact,
-      intime: formValues.InTime,
+      intime: this.currtime(),
       to_mail: this.emailid()
     });
   };
@@ -24,7 +30,7 @@ class VisitorCreate extends React.Component {
     window.emailjs
       .send('gmail', templateId, variables, 'user_lfSQio4IBYlIANJ1SqnKh')
       .then(res => {
-        console.log('Email successfully sent!', res);
+        console.log('Email successfully sent! to host', res);
       })
       .catch(err =>
         console.error(

@@ -23,7 +23,11 @@ class HostsList extends React.Component {
       return (
         <div className='item' key={host.id}>
           {this.renderAdmin(host)}
-          <i className='large middle aligned icon camera' />
+          <img
+            className='left floated mini ui circular image'
+            alt='Loading...'
+            src='https://cdn1.iconfinder.com/data/icons/corporate-management-9/48/9-512.png'
+          />
           <div className='content'>
             <Link to={`/hosts/${host.id}`} className='header'>
               {host.name}

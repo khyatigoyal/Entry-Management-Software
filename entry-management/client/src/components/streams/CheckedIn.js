@@ -17,7 +17,7 @@ class CheckedIn extends React.Component {
         </h5>
         <p>
           Do you want to
-          <Link to={`/hosts/${id}/newvisitor/in/checkout`}> Checkout </Link>
+          <Link to={`/hosts/${id}/newvisitor/checkout`}> Checkout </Link>
           from {name} appartment!!!
         </p>
         <div className='right floated content'>
